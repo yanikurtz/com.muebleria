@@ -1,13 +1,16 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import dao.ItemDao;
+import model.Item;
+import service.StockService;
+import service.impl.InMemoryItemDao;
+import StockServiceImpl.StockServiceImpl;
+
+import java.util.List;
+
+public class App {
+    public static void main(String[] args) {
+
+
     }
 }
