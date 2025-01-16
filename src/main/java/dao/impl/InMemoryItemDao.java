@@ -1,4 +1,4 @@
-package service.impl;
+package dao.impl;
 
 import dao.ItemDao;
 import model.Item;
@@ -9,12 +9,7 @@ public class InMemoryItemDao implements ItemDao {
     private List<Item> stock = new ArrayList<>();
 
     @Override
-    public List<Item> getStock() {
-        return stock;  // Devuelve el stock completo
-    }
-
-    @Override
-    public Item getStock(Integer itemId) {
+    public Item getItem(Integer itemId) {
         for (Item item : stock) {
             if (item.getId().equals(itemId)) {
                 return item;  // Devuelve el artículo con el ID correspondiente
@@ -24,8 +19,13 @@ public class InMemoryItemDao implements ItemDao {
     }
 
     @Override
-    public boolean addStock(Integer itemId, Integer quantity) {
-        Item item = getStock(itemId);
+    public List<Item> getItems() {
+        return stock;  // Devuelve el stock completo
+    }
+
+    @Override
+    public boolean addQuantity(Integer itemId, Integer quantity) {
+        Item item = getItem(itemId);
 
         if (item != null) {
             item.setQuantity(item.getQuantity() + quantity);  // Suma la cantidad al artículo existente
@@ -38,8 +38,8 @@ public class InMemoryItemDao implements ItemDao {
     }
 
     @Override
-    public boolean withdraw(Integer itemId, Integer quantity) {
-        Item item = getStock(itemId);
+    public boolean withdrawQuantity(Integer itemId, Integer quantity) {
+        Item item = getItem(itemId);
 
         if (item != null && item.getQuantity() >= quantity) {
             item.setQuantity(item.getQuantity() - quantity);  // Resta la cantidad del artículo
@@ -49,4 +49,3 @@ public class InMemoryItemDao implements ItemDao {
         return false;  // Si no hay suficiente stock, la operación falla
     }
 }
-

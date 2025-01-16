@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84a17b28-34a5-45a6-8d85-220d7187764c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StockServiceImpl/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/StockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/InMemoryItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/InMemoryItemDao.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2rh4zFn0LY5iJZeyJ3CX6KQ0w0Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/san/Workplaces/woodshop/com.muebleria"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84a17b28-34a5-45a6-8d85-220d7187764c" name="Changes" comment="" />
+      <created>1736998235023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736998235023</updated>
+    </task>
+    <servers />
+  </component>
+</project>
