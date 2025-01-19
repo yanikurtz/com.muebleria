@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InMemoryItemDao implements ItemDao {
-    private List<Item> stock = new ArrayList<>();
+    private final List<Item> stock;
+
+    public InMemoryItemDao(List<Item> stock) {
+        this.stock = stock;
+    }
 
     @Override
     public Item getItem(Integer itemId) {
