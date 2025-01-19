@@ -34,10 +34,7 @@ public class InMemoryItemDao implements ItemDao {
             item.setQuantity(item.getQuantity() + quantity);  // Suma la cantidad al artículo existente
             return true;
         }
-
-        // Si el artículo no existe, lo crea
-        stock.add(new Item(itemId, "Nuevo Producto", quantity));
-        return true;
+        return false;
     }
 
     @Override
