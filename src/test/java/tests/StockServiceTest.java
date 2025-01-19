@@ -5,6 +5,7 @@ import model.Item;
 import service.impl.StockServiceImpl;
 import junit.framework.TestCase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class StockServiceTest extends TestCase{
@@ -14,7 +15,7 @@ public class StockServiceTest extends TestCase{
 
     @Override
     protected void setUp(){
-        itemDao = new InMemoryItemDao();
+        itemDao = new InMemoryItemDao(new ArrayList<>());
         stockService = new StockServiceImpl(itemDao);
     }
 

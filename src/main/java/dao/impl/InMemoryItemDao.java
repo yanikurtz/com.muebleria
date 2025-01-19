@@ -2,7 +2,6 @@ package dao.impl;
 
 import dao.ItemDao;
 import model.Item;
-import java.util.ArrayList;
 import java.util.List;
 
 public class InMemoryItemDao implements ItemDao {
