@@ -65,9 +65,6 @@ public class InMemoryItemDaoTest extends TestCase {
         assertEquals(Integer.valueOf(0), dao.getItem(NAILS.id).getQuantity());
     }
 
-
-
-
     private InMemoryItemDao buildItemDao(Item... items) {
         return new InMemoryItemDao(Arrays.asList(items));
     }

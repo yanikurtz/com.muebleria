@@ -1,37 +1,28 @@
-package tests;
+package org.example.service.impl;
 
+import dao.ItemDao;
 import dao.impl.InMemoryItemDao;
 import model.Item;
+import service.StockService;
 import service.impl.StockServiceImpl;
 import junit.framework.TestCase;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
-public class StockServiceTest extends TestCase{
+public class StockServiceTest extends TestCase {
 
     private InMemoryItemDao itemDao;
     private StockServiceImpl stockService;
 
-    @Override
-    protected void setUp(){
-        itemDao = new InMemoryItemDao(new ArrayList<>());
-        stockService = new StockServiceImpl(itemDao);
+    public void testGetItem_Missing(){
+        StockService service = buildService();
+        service.addStock(1, 10);
+
+        assertEquals(0, service.getStock().size());
     }
 
-    public void testGetItem_Success(){
-        itemDao.addQuantity(1, 10);
-        Item item = itemDao.getItem(1);
-
-        assertNotNull("El item existe", item);
-        assertEquals(1, item.getId().intValue());
-        assertEquals(10, item.getQuantity().intValue());
+    private StockServiceImpl buildService(Item... items) {
+        ItemDao itemDao = new InMemoryItemDao(Arrays.asList(items));
+        return new StockServiceImpl(itemDao);
     }
-
-    public void testGetItem_NotFound(){
-        Item item = itemDao.getItem(99);
-        assertNotNull("El item no existe", item);
-
-    }
-
 }
