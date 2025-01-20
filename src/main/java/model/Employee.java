@@ -1,16 +1,14 @@
 package model;
 
-public class Item {
+public class Employee {
     private Integer id;
     private String name;
-    private Integer quantity;
 
-    public Item() {}
+    public Employee() { }
 
-    public Item(Integer id, String name, Integer quantity) {
+    public Employee(Integer id, String name) {
         this.id = id;
         this.name = name;
-        this.quantity = quantity;
     }
 
     public Integer getId() {
@@ -28,13 +26,4 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
 }
-
